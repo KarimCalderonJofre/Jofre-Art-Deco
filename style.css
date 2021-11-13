@@ -1,0 +1,18 @@
+/* resets */
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+/* header */
+header{
+    background-color: rgba(184, 255, 255, 0.938);
+}
+img{
+    width: 100%;
+}
