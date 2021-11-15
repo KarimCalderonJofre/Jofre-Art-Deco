@@ -1,3 +1,16 @@
+/* Paleta de colores */
+:root{
+    --main-turquesaMuyOscuro:#0d1d24;
+    --main-turquesaOscuro:#2B5D71;
+    --main-salmonClaro:#EECEA2;
+    --main-celeste:#92D1D6;
+    --main-celesteOscuro:#72A9B4;
+}
+
+/* Fuente logo */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 /* resets */
 *{
     margin:0;
@@ -5,14 +18,121 @@
 }
 
 body{
+    background-color: var(--main-turquesaOscuro);
     margin:0;
     padding: 0;
 }
 
 /* header */
 header{
-    background-color: rgba(184, 255, 255, 0.938);
+    background-color: var(--main-almond);
 }
+
+h1{
+    font-family: 'Rochester Regular';
+    position:absolute;
+}
+
 img{
     width: 100%;
+    filter:saturate(30%);
+    background-color: var(--main-turquesaOscuro);
+    
 }
+
+header img{
+    position:relative;
+    z-index: 1;
+}
+
+header ul li{
+    
+    display:inline;
+}
+
+nav{
+    background-color: var(--main-turquesaOscuro);
+    z-index: 1000;
+    padding:2%;
+    color:var(--main-salmonClaro);
+}
+li{
+    padding:2%;
+}
+
+.marcaPortada{
+    position:relative;
+    display:inline-block;
+    text-align:right;
+}
+
+.marca .art{
+    position:absolute;
+    top:85%;
+    right:10px;
+    z-index: 5;
+    color:var(--main-turquesaMuyOscuro);
+    text-shadow: 2px 2px var(--main-salmonClaro);
+    font-family: 'Lobster', cursive;
+}
+
+.marca h1{
+    position:absolute;
+    top:70%;
+    right:10px;
+    z-index: 5;
+    color:var(--main-turquesaMuyOscuro);
+    text-shadow: 2px 2px var(--main-salmonClaro);
+    font-family: 'Lobster', cursive;
+}
+
+section{
+    background-color: rgba(114, 169, 180, 0.726);
+    padding:5%;
+    margin: 10% 5% 10% 5%;
+    border-radius: 10px;
+    color:var(--main-salmonClaro)
+}
+
+section h3{
+    padding-bottom: 3%;
+}
+
+
+
+section img{
+    border-radius: 10px;
+    margin:2% 0%;
+}
+
+section h4{
+    padding-bottom: 3%;
+}
+
+.contenedor{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+
+}
+
+.contenedor h3{
+    position:absolute;
+    top:45%;
+    right: 20%;
+    left:20%;
+    background-color: rgba(146, 209, 214, 0.822);
+    border-radius: 10px;
+    padding:2%;
+    color:hsl(34, 28%, 52%);
+}
+
+
+
+
+
+
+
+
+
+
