@@ -33,9 +33,10 @@ h1{
     position:absolute;
 }
 
-img{
-    width: 100%;
-    filter:saturate(30%);
+.portada{
+    height: 575px;
+    max-width: 100%;
+    filter:saturate(100%);
     background-color: var(--main-turquesaOscuro);
     
 }
@@ -102,7 +103,7 @@ section h3{
 
 section img{
     border-radius: 10px;
-    margin:2% 0%;
+    margin:4% 0%;
 }
 
 section h4{
@@ -125,6 +126,11 @@ section h4{
     border-radius: 10px;
     padding:2%;
     color:rgb(167, 137, 98);
+}
+
+.contenedor img{
+    max-width: 95%;
+    box-shadow:3px 3px 5px 1px rgba(238, 206, 162, 0.733) ;
 }
 
 
