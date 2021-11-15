@@ -1,3 +1,9 @@
+
+/* Fuente logo */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
 /* Paleta de colores */
 :root{
     --main-turquesaMuyOscuro:#0d1d24;
@@ -5,10 +11,12 @@
     --main-salmonClaro:#EECEA2;
     --main-celeste:#92D1D6;
     --main-celesteOscuro:#72A9B4;
+    /* Nueva */
+    --main-marronOscuro:rgb(52, 47, 39);
+    --main-grisMarron:rgb(173, 176, 177);
+    --main-naranjaApagado:rgb(165, 120, 72);
+    --main-verde:rgb(119, 147, 102);
 }
-
-/* Fuente logo */
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
 /* resets */
@@ -18,18 +26,18 @@
 }
 
 body{
-    background-color: var(--main-turquesaOscuro);
+    background-color: var(--main-marronOscuro);
     margin:0;
     padding: 0;
 }
 
 /* header */
 header{
-    background-color: var(--main-almond);
+    background-color: var(--main-marronOscuro);
 }
 
 h1{
-    font-family: 'Rochester Regular';
+    font-family: 'Nunito', sans-serif;
     position:absolute;
 }
 
@@ -37,7 +45,7 @@ h1{
     height: 575px;
     max-width: 100%;
     filter:saturate(100%);
-    background-color: var(--main-turquesaOscuro);
+    background-color: var(--main-naranjaApagado);
     
 }
 
@@ -52,7 +60,7 @@ header ul li{
 }
 
 nav{
-    background-color: var(--main-turquesaOscuro);
+    background-color: var(--main-marronOscuro);
     z-index: 1000;
     padding:2%;
     color:var(--main-salmonClaro);
@@ -67,6 +75,10 @@ li{
     text-align:right;
 }
 
+.marca h1 .art{
+    background-color: var(--main-marronOscuro);
+    padding: 2%;
+}
 .marca .art{
     position:absolute;
     top:85%;
@@ -88,26 +100,28 @@ li{
 }
 
 section{
-    background-color: rgba(114, 169, 180, 0.726);
+    background-color: rgb(26, 23, 19);
     padding:5%;
     margin: 10% 5% 10% 5%;
-    border-radius: 10px;
-    color:var(--main-salmonClaro)
+    border-radius: 3px;
+    color:rgb(97, 116, 85);
 }
 
 section h3{
     padding-bottom: 3%;
+    font-family: 'Nunito', sans-serif;
 }
 
 
 
 section img{
-    border-radius: 10px;
+    border-radius: 3px;
     margin:4% 0%;
 }
 
 section h4{
     padding-bottom: 3%;
+    font-family: 'Nunito', sans-serif;
 }
 
 .contenedor{
@@ -119,13 +133,13 @@ section h4{
 
 .contenedor h3{
     position:absolute;
-    top:45%;
+    bottom:7%;
     right: 20%;
     left:20%;
-    background-color: rgba(146, 209, 214, 0.822);
-    border-radius: 10px;
+    background-color: rgba(119, 147, 102, 0.733);
+    border-radius: 3px;
     padding:2%;
-    color:rgb(167, 137, 98);
+    color:rgb(88, 73, 53);
 }
 
 .contenedor img{
