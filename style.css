@@ -26,25 +26,52 @@
 }
 
 body{
-    background-color: var(--main-marronOscuro);
-    margin:0;
+    
+    margin:0 0 0 0;
     padding: 0;
 }
 
 /* header */
-header{
-    background-color: var(--main-marronOscuro);
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 1% 5%;
+    font-size: 1.3em;
+    text-decoration: none;
+    
 }
 
 h1{
-    font-family: 'Nunito', sans-serif;
-    position:absolute;
+    display:none;
 }
 
+
+.marcaPortada{
+    position:relative;
+    display:inline-block;
+    text-align:right;
+}
+
+.marca{
+    position:absolute;
+    display:inline-block;
+    top:62%;
+    right:12px;
+    left:15px;
+    z-index: 5;
+    padding: 2%;
+    margin:auto;
+    background-color: rgba(165, 120, 72, 0.5);
+    
+}
+
+
 .portada{
+    
     height: 575px;
     max-width: 100%;
-    filter:saturate(100%);
+    
     background-color: var(--main-naranjaApagado);
     
 }
@@ -59,15 +86,53 @@ header ul li{
     display:inline;
 }
 
+
+.inicio{
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    
+}
 nav{
-    background-color: var(--main-marronOscuro);
-    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.589);
+    z-index: 10;
     padding:2%;
-    color:var(--main-salmonClaro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
-li{
-    padding:2%;
+.inicio nav{
+    
+    position:absolute;
+    display:inline-block;
+    top: 30px;
+    right: 20px;
+    left:3px;
+    z-index: 15;
+    padding: 0 10%;
+    margin:auto; 
+}    
+    
+    
+
+
+header a:link{
+    text-decoration:none;
+    color:var(--main-naranjaApagado);
 }
+header a:visited{
+    text-decoration:none;
+    color:var(--main-naranjaApagado);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 
 
 
@@ -80,20 +145,38 @@ li{
 .dropdown{
     display:none;
     position:absolute;
-    background-color: var(--main-marronOscuro);
-    min-width:290px;
+    background-color: rgba(0, 0, 0, 0.904);
+    min-width:210px;
     padding: 12px 16px;
     z-index:5;
     top:28px;
-    left:10px;
+    /* left:20px;; */
     text-align:center;
 }
 .menu:hover .dropdown{
     display:block;
 }
+li{
+    padding:2%;
+}
 .dropdown li{
     list-style:none;
     font-size:0.8em;
+    display: flex;
+    flex-direction: column;
+}
+header li:hover a:hover{
+    background-color: var(--main-naranjaApagado);
+    color: rgba(0, 0, 0, 0.904);
+}
+
+
+
+.bienvenida{
+    background-color: rgba(255, 255, 255, 0.808);
+    color:rgba(0, 0, 0, 0.904);
+    padding:10% 5%;
+    margin:auto;
 }
 
 
@@ -101,44 +184,37 @@ li{
 
 
 
-.marcaPortada{
-    position:relative;
-    display:inline-block;
-    text-align:right;
-}
-
-.marca h1 .art{
-    background-color: var(--main-marronOscuro);
-    padding: 2%;
-}
-.marca .art{
-    position:absolute;
-    top:85%;
-    right:10px;
-    z-index: 5;
-    color:var(--main-turquesaMuyOscuro);
-    text-shadow: 2px 2px var(--main-salmonClaro);
-    font-family: 'Lobster', cursive;
-}
-
-.marca h1{
-    position:absolute;
-    top:70%;
-    right:10px;
-    z-index: 5;
-    color:var(--main-turquesaMuyOscuro);
-    text-shadow: 2px 2px var(--main-salmonClaro);
-    font-family: 'Lobster', cursive;
-}
-
-section{
-    background-color: rgb(26, 23, 19);
+.categorias{
+    background-color:rgba(255, 255, 255, 0.808);
     padding:5%;
-    margin: 10% 5% 10% 5%;
-    border-radius: 3px;
-    color:rgb(97, 116, 85);
+    margin: auto;
+    color:rgba(0, 0, 0, 0.904);
 }
 
+.aboutUs{
+    background-color: rgba(255, 255, 255, 0.808);
+    color:rgba(0, 0, 0, 0.904);
+    padding: 10% 5%;
+    margin:auto;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.808);
+    color:rgba(0, 0, 0, 0.904);
+    padding:10% 5%;
+    margin:auto;
+}
+
+.suscripcion{
+    background-color: rgba(255, 255, 255, 0.808);
+    color:rgba(0, 0, 0, 0.904);
+    padding:10% 5%;
+    margin:auto;
+}
+input{
+    border:none;
+    width: 95%;
+}
 section h3{
     padding-bottom: 3%;
     font-family: 'Nunito', sans-serif;
@@ -168,7 +244,7 @@ section h4{
     bottom:7%;
     right: 20%;
     left:20%;
-    background-color: rgba(119, 147, 102, 0.733);
+    background-color: var(--main-naranjaApagado);
     border-radius: 3px;
     padding:2%;
     color:rgb(88, 73, 53);
@@ -176,7 +252,7 @@ section h4{
 
 .contenedor img{
     max-width: 95%;
-    box-shadow:3px 3px 5px 1px rgba(238, 206, 162, 0.733) ;
+    box-shadow:3px 3px 5px 1px var(--main-grisMarron) ;
 }
 
 
