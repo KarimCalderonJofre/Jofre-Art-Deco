@@ -15,7 +15,7 @@
     --main-marronOscuro:rgb(52, 47, 39);
     --main-grisMarron:rgb(173, 176, 177);
     --main-naranjaApagado:rgb(165, 120, 72);
-    --main-verde:rgb(119, 147, 102);
+    --main-verde:rgb(104, 129, 89);
 }
 
 
@@ -27,95 +27,50 @@
 
 body{
     
-    margin:0 0 0 0;
+    margin:0;
     padding: 0;
+    overflow-x: hidden;
 }
 
+
 /* header */
-header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 5% 1% 5%;
-    font-size: 1.3em;
-    text-decoration: none;
-    
-}
 
 h1{
     display:none;
 }
 
-
-.marcaPortada{
-    position:relative;
-    display:inline-block;
-    text-align:right;
+header {
+    /* display:flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* margin: 0 5% 1% 5%; */
+    font-size: 1.3em;
+    text-decoration: none; 
 }
 
-.marca{
-    position:absolute;
-    display:inline-block;
-    top:62%;
-    right:12px;
-    left:15px;
-    z-index: 5;
-    padding: 2%;
-    margin:auto;
-    background-color: rgba(165, 120, 72, 0.5);
-    
-}
-
-
-.portada{
-    
-    height: 575px;
-    max-width: 100%;
-    
-    background-color: var(--main-naranjaApagado);
-    
-}
-
-header img{
-    position:relative;
-    z-index: 1;
-}
-
-header ul li{
-    
-    display:inline;
-}
-
-
-.inicio{
-    position:relative;
-    display:flex;
-    justify-content: space-between;
-    
-}
 nav{
     background-color: rgba(255, 255, 255, 0.589);
     z-index: 10;
-    padding:2%;
+    position:relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    font-size:1.2em;  
 }
-.inicio nav{
+
+header nav{
     
     position:absolute;
-    display:inline-block;
-    top: 30px;
-    right: 20px;
-    left:3px;
+    display:flex;
+    right: 0px;
+    left:0px;
     z-index: 15;
-    padding: 0 10%;
+    padding: 2% 10%;
     margin:auto; 
 }    
     
     
-
+/* Links en el header */
 
 header a:link{
     text-decoration:none;
@@ -135,7 +90,7 @@ header{
 
 
 
-
+/* Menú */
 
 .menu{
     color:var(--main-naranjaApagado);
@@ -150,8 +105,9 @@ header{
     padding: 12px 16px;
     z-index:5;
     top:28px;
-    /* left:20px;; */
+    left:-200px;;
     text-align:center;
+    border-radius:5px;
 }
 .menu:hover .dropdown{
     display:block;
@@ -164,57 +120,42 @@ li{
     font-size:0.8em;
     display: flex;
     flex-direction: column;
+
 }
 header li:hover a:hover{
-    background-color: var(--main-naranjaApagado);
+    background-color: rgba(165, 120, 72, 0.781);
     color: rgba(0, 0, 0, 0.904);
-}
-
-
-
-.bienvenida{
-    background-color: rgba(255, 255, 255, 0.808);
-    color:rgba(0, 0, 0, 0.904);
-    padding:10% 5%;
-    margin:auto;
+    border-radius: 5px;
 }
 
 
 
 
 
-
-.categorias{
-    background-color:rgba(255, 255, 255, 0.808);
-    padding:5%;
-    margin: auto;
-    color:rgba(0, 0, 0, 0.904);
+/* Imagen de portada */
+.portada{
+    
+    height: 575px;
+    max-width: 100%;
+    
 }
 
-.aboutUs{
-    background-color: rgba(255, 255, 255, 0.808);
-    color:rgba(0, 0, 0, 0.904);
-    padding: 10% 5%;
-    margin:auto;
+/* Secciones */
+
+/* resets secciones */
+
+.titulo{
+    color:var(--main-verde);
 }
 
-footer{
-    background-color: rgba(255, 255, 255, 0.808);
-    color:rgba(0, 0, 0, 0.904);
-    padding:10% 5%;
-    margin:auto;
+section:hover{
+    margin:0.1%;
+    border:solid 0.5px var(--main-naranjaApagado);
+    border-radius: 4px;   
+    background-color: rgba(0, 0, 0, 0.904);
+    color: rgba(255, 255, 255, 0.808);
 }
 
-.suscripcion{
-    background-color: rgba(255, 255, 255, 0.808);
-    color:rgba(0, 0, 0, 0.904);
-    padding:10% 5%;
-    margin:auto;
-}
-input{
-    border:none;
-    width: 95%;
-}
 section h3{
     padding-bottom: 3%;
     font-family: 'Nunito', sans-serif;
@@ -249,12 +190,65 @@ section h4{
     padding:2%;
     color:rgb(88, 73, 53);
 }
+.categ:hover{
+    background-color: var(--main-verde);
+}
 
 .contenedor img{
     max-width: 95%;
     box-shadow:3px 3px 5px 1px var(--main-grisMarron) ;
 }
 
+
+
+
+
+.bienvenida{
+    background-color: rgba(255, 255, 255, 0.808);
+    color:rgba(0, 0, 0, 0.904);
+    padding:10% 5%;
+    margin:auto;
+}
+
+
+.categorias{
+    background-color:rgba(255, 255, 255, 0.808);
+    padding:5%;
+    margin: auto;
+    color:rgba(0, 0, 0, 0.904);
+}
+
+.aboutUs{
+    background-color: rgba(255, 255, 255, 0.808);
+    color:rgba(0, 0, 0, 0.904);
+    padding: 10% 5%;
+    margin:auto;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.808);
+    color:rgba(0, 0, 0, 0.904);
+    padding:10% 5%;
+    margin:auto;
+}
+footer:hover{
+    margin:0.1%;
+    border:solid 0.5px var(--main-naranjaApagado);
+    border-radius: 4px;  
+    background-color: rgba(0, 0, 0, 0.904);
+    color: rgba(255, 255, 255, 0.808);
+}
+
+.suscripcion{
+    background-color: rgba(255, 255, 255, 0.808);
+    color:rgba(0, 0, 0, 0.904);
+    padding:10% 5%;
+    margin:auto;
+}
+input{
+    border:none;
+    width: 95%;
+}
 
 
 
