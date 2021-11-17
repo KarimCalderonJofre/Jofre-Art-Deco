@@ -225,20 +225,8 @@ section h4{
     margin:auto;
 }
 
-footer{
-    background-color: rgba(255, 255, 255, 0.808);
-    color:rgba(0, 0, 0, 0.904);
-    padding:10% 5%;
-    margin:auto;
-}
-footer:hover{
-    margin:0.1%;
-    border:solid 0.5px var(--main-naranjaApagado);
-    border-radius: 4px;  
-    background-color: rgba(0, 0, 0, 0.904);
-    color: rgba(255, 255, 255, 0.808);
-}
 
+/* suscripcion */
 .suscripcion{
     background-color: rgba(255, 255, 255, 0.808);
     color:rgba(0, 0, 0, 0.904);
@@ -248,7 +236,61 @@ footer:hover{
 input{
     border:none;
     width: 95%;
+    padding: 2% 1%;
 }
+
+
+/* footer */
+footer{
+    background-color: rgba(255, 255, 255, 0.808);
+    color:rgba(0, 0, 0, 0.904);
+    padding:10% 5%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+}
+footer:hover{
+    margin:0.1%;
+    border:solid 0.5px var(--main-naranjaApagado);
+    border-radius: 4px;  
+    background-color: rgba(0, 0, 0, 0.904);
+    color: rgba(255, 255, 255, 0.808);
+}
+.iconoY{
+    display:flex;
+    align-items: center;
+    padding: 1%;
+    
+}
+.iconosRedes{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.icono{
+    padding: 1% 3% 2% 2%;
+    font-size: 1.2em;
+    color:var(--main-naranjaApagado);
+}
+
+.iconoY a:link{
+    text-decoration:none;
+    
+}
+.iconoY a:visited{
+    text-decoration:none;
+
+footer:hover a:visited{
+        margin:0.1%;
+        border:solid 0.5px var(--main-naranjaApagado);
+        border-radius: 4px;  
+        background-color: rgba(0, 0, 0, 0.904);
+        color: rgba(255, 255, 255, 0.808);
+}
+    
+
+
 
 
 
