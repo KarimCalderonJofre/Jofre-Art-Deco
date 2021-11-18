@@ -1,8 +1,8 @@
 
-/* Fuente logo */
+/* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Praise&display=swap');
 
 /* Paleta de colores */
 :root{
@@ -97,15 +97,28 @@ header{
     position:relative;
     display:inline-block;
 }
-.dropdown{
+.dropdown1{
     display:none;
     position:absolute;
     background-color: rgba(0, 0, 0, 0.904);
-    min-width:210px;
+    min-width:160px;
     padding: 12px 16px;
     z-index:5;
     top:28px;
     left:-200px;;
+    text-align:center;
+    border-radius:5px;
+}
+
+.dropdown2{
+    display:none;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.904);
+    min-width:160px;
+    padding: 12px 16px;
+    z-index:5;
+    top:28px;
+    left:-10px;;
     text-align:center;
     border-radius:5px;
 }
@@ -135,8 +148,10 @@ header li:hover a:hover{
 /* Imagen de portada */
 .portada{
     
+    
     height: 575px;
-    max-width: 100%;
+    overflow-x: hidden;
+    
     
 }
 
@@ -150,10 +165,10 @@ header li:hover a:hover{
 
 section:hover{
     margin:0.1%;
-    border:solid 0.5px var(--main-naranjaApagado);
+    border:solid 0.1px rgba(206, 204, 204, 0.808);
     border-radius: 4px;   
-    background-color: rgba(0, 0, 0, 0.904);
-    color: rgba(255, 255, 255, 0.808);
+    background-color: rgba(238, 236, 236, 0.808);
+    color: rgba(0, 0, 0, 0.904);
 }
 
 section h3{
@@ -253,8 +268,8 @@ footer:hover{
     margin:0.1%;
     border:solid 0.5px var(--main-naranjaApagado);
     border-radius: 4px;  
-    background-color: rgba(0, 0, 0, 0.904);
-    color: rgba(255, 255, 255, 0.808);
+    background-color: rgba(238, 236, 236, 0.808);
+    color: rgba(0, 0, 0, 0.904);
 }
 .iconoY{
     display:flex;
@@ -280,23 +295,179 @@ footer:hover{
 }
 .iconoY a:visited{
     text-decoration:none;
-
-footer:hover a:visited{
-        margin:0.1%;
-        border:solid 0.5px var(--main-naranjaApagado);
-        border-radius: 4px;  
-        background-color: rgba(0, 0, 0, 0.904);
-        color: rgba(255, 255, 255, 0.808);
 }
+
+
+
+
+/* Iniciar Sesión */
+.cuenta{
+    position:relative;
+    display:inline-block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
     
 
+}
+.cuenta .iniciarSesion{
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.808);
+    display: flex;
+    flex-direction: column;
+    min-height: 80%;  
+    width: 300px; 
+    font-size: 1em;
+    font-family: 'Nunito', sans-serif;
+}
+
+.iniciarSesion{
+    border-radius:10px;
+    align-items: center;
+}
+
+a img{
+    margin-top:10%;
+    padding-top: 10%;
+}
+
+.iniciarSesion h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin-top:20%;
+    margin-bottom: 2%;
+}
+
+.iniciarSesion input{
+    padding:2%;
+    width: 220px;
+    margin:3% auto;
+    border-radius:5px;
+    font-size: 1em;
+}
+
+.iniciarSesion button{
+    background-color: var(--main-naranjaApagado);
+    color:rgb(88, 73, 53);
+    padding:2% 2%;
+    margin:4% 2%;
+    border-radius: 5px;
+    border:none;
+    font-size: 1em;
+}
+
+.iniciarSesion button:hover{
+    background-color: var(--main-verde);
+    
+}
 
 
+label .checkbox{
+    width: 45px;
+    margin-bottom: 25%;
+    
+}
+.iniciarSesion p{
+    text-align: center;
+}
+
+.iniciarSesion a:link{
+    text-decoration: none;
+}
+.iniciarSesion a:visited{
+    text-decoration:none;
+    color:black;
+}
+
+.iniciarSesion button a:link{
+    text-decoration: none;
+    color:rgb(88, 73, 53);
+}
+.iniciarSesion button a:visited{
+    text-decoration: none;
+    color:rgb(88, 73, 53);
+}
 
 
+/* Crear cuenta */
+
+.cuenta{
+    position:relative;
+    display:inline-block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+.cuenta .registrate{
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.808);
+    display: flex;
+    flex-direction: column;
+    min-height: 90%;  
+    width: 300px; 
+    font-size: 1em;
+    font-family: 'Nunito', sans-serif;
+}
+
+.registrate{
+    border-radius:10px;
+    align-items: center;
+}
+
+a img{
+    margin-top:10%;
+    padding-top: 10%;
+}
+
+.registrate h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin-top:20%;
+    margin-bottom: 2%;
+}
+
+.registrate input{
+    padding:2%;
+    width: 220px;
+    margin:3% auto;
+    border-radius:5px;
+    font-size: 1em;
+}
+
+.registrate button{
+    background-color: var(--main-naranjaApagado);
+    color:rgb(88, 73, 53);
+    padding:2% 2%;
+    margin:4% 2%;
+    border-radius: 5px;
+    border:none;
+    font-size: 1em;
+}
+
+.registrate button:hover{
+    background-color: var(--main-verde);
+    
+}
 
 
+label .checkbox{
+    width: 45px;  
+    margin-bottom:15%;
+}
+.registrate p{
+    text-align: center;
+    margin:0 10%;
+    padding-top:2%;
+}
 
-
-
-
+.registrate a:link{
+    text-decoration: none;
+}
+.registrate a:visited{
+    text-decoration:none;
+    color:black;
+}
