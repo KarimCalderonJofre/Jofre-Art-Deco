@@ -6,15 +6,10 @@
 
 /* Paleta de colores */
 :root{
-    --main-turquesaMuyOscuro:#0d1d24;
-    --main-turquesaOscuro:#2B5D71;
-    --main-salmonClaro:#EECEA2;
-    --main-celeste:#92D1D6;
-    --main-celesteOscuro:#72A9B4;
-    /* Nueva */
-    --main-marronOscuro:rgb(52, 47, 39);
-    --main-grisMarron:rgb(173, 176, 177);
+    --main-negro:rgba(0, 0, 0, 0.904);
+    --main-blanco:rgba(238, 236, 236, 0.808);
     --main-naranjaApagado:rgb(165, 120, 72);
+    --main-marron:rgb(88, 73, 53);
     --main-verde:rgb(104, 129, 89);
 }
 
@@ -659,6 +654,7 @@ label .checkbox{
     .menuLargo li{
         list-style: none;
         font-size: 0.7em;
+        color:rgb(53, 44, 32);
     }
 
     ul {
@@ -666,11 +662,13 @@ label .checkbox{
         flex-direction: row;
     } 
     li{
-        padding-left: 2%;;
+        padding-left: 2%;
+        color:rgb(70, 57, 41);
     }
     li:hover{
         background-color: var(--main-naranjaApagado);
         border-radius: 5px;
+        color:rgb(88, 73, 53);
     }
 }
 @media(min-width:1280){
