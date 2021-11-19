@@ -12,36 +12,48 @@
     
 
         <header>
-                
-            <div class="marcaPortada">                             
-                <img class="portada" src="./assets/Portada/Portada integrador.png" alt="Portada">
-                
+            
+            
+            <div class="portadas">                             
+                <img  class="portadaVertical" src="./assets/Portada/portadaVertical.png" alt="Portada">
+        
+                <img class="portadaHorizontal" src="./assets/Portada/portadaHorizontalGrande.png" alt="Portada">
             </div>
 
             <h1>Jofré Art y Deco</h1>
 
             <nav>
+                
+                <a href="./index.html"><img class="logoChico" src="./assets/Logo/LOGO4CHICO.png" alt="Logo"></a>
+                <a href="./index.html"><img class="logoMediano" src="./assets/Logo/LOGO10MED.png" alt="Logo"></a>
+                <div class="vacio">    
+                </div>
                 <div class="menu">
                     <i class="far fa-user-circle"></i>
                     <ul class="dropdown dropdown2">
                         <li><a href="./iniciarSesion.html" target="_blank">Iniciar Sesión</a></li>
                         <li><a href="./crearCuenta.html" target="_blank">Crear cuenta</a></li>
-                        <li><a href="#" target="_blank">Suscribite</a></li>
-                        <li><a href="#" target="_blank">Contactanos</a></li>
+                        
                     </ul>
                 </div>
-                
-                <a href="./index.html"><img src="./assets/Logo/LOGO4CHICO.png" alt="Logo"></a>
-                
+
                 <div class="menu">
                     <i class="fas fa-bars"></i>
                     <ul class="dropdown dropdown1">
-                        <li><a href="#" target="_blank">Inicio</a> </li>
-                        <li><a href="#" target="_blank">Materiales que trabajamos</a></li>
-                        <li><a href="#" target="_blank">Sobre nosotros</a></li>
-                        <li><a href="#" target="_blank">Suscribite</a></li>
-                        <li><a href="#" target="_blank">Contactanos</a></li>
+                        <li><a href="#bienvenida">Bienvenida</a> </li>
+                        <li><a href="#materiales">Materiales que trabajamos</a></li>
+                        <li><a href="#aboutUs">Sobre nosotros</a></li>
+                        <li><a href="#suscribite">Suscribite</a></li>
+                        <li><a href="#contactanos">Contactanos</a></li>
                         
+                    </ul>
+                </div>
+
+                <div class="menuLargo">
+                    <ul>
+                        <li><a href="./iniciarSesion" target="_blank">Cuenta</a></li>
+                        <li><a href="#materiales">Materiales</a></li>
+                        <li><a href="suscribite">Suscribite</a></li>
                     </ul>
                 </div>
                 
@@ -53,6 +65,7 @@
 
     
     <!-- Sección de bienvenida -->
+    <a name="bienvenida">
     <section class="bienvenida">
         <h3 class="titulo">Bienvenidos</h3>
         <p>Sean tod@s bienvenidos a nuestro mundo hecho realidad</p>
@@ -60,39 +73,53 @@
 
     <!-- Categorias -->
     <section class="categorias">
-    
+        
         <h3 class="titulo">Materiales que trabajamos</h3>
-
-        <!-- Pintura -->
-        <div class="contenedor">
-            <img src="./assets/Categorias/Pinturas/Mariposa.jpg" alt="Pintura Mariposa">
-            <h3 class="categ">PINTURA</h3>
-        </div>
-        <!-- Vidrio -->
-        <div class="contenedor">
-            <img src="./assets/Categorias/vidrio/CuadroFlores.jpg" alt="Cuadro Flores Vidrio">
-            <h3 class="categ">VIDRIO</h3>
-        </div>
-        <!-- Metal -->
-        <div class="contenedor">
-            <img src="./assets/Categorias/metal/tortuga2.jpg" alt="Totuga Calada">
-            <h3 class="categ">HIERRO</h3>
-        </div>
-        <!-- Madera -->
-        <div class="contenedor">
-            <img src="./assets/Categorias/madera/mapaMundi.jpg" alt="Mapa Mundi">
-            <h3 class="categ">MADERA</h3>
-        </div>
-        <!-- Cerámica -->
-        <div class="contenedor">
-            <img src="./assets/Categorias/ceramica/lamparasDeCeramica.jpg" alt="Lamparas de ceramica">
-            <h3 class="categ">CERÁMICA</h3>
+        
+        <a name="materiales">
+        
+        <div class="ordenar">
+            <div class="pYhYmadera">
+                    
+                    <!-- Pintura -->
+                    <div class="contenedor">
+                        <img src="./assets/Categorias/Pinturas/Mariposa.jpg" alt="Pintura Mariposa">
+                        <h3 class="categ">PINTURA</h3>
+                    </div>
+                    <!-- Hierro -->
+                    <div class="contenedor">
+                        <img src="./assets/Categorias/metal/tortuga2.jpg" alt="Totuga Calada">
+                        <h3 class="categ">HIERRO</h3>
+                    </div>
+                
+                    
+                <!-- Madera -->
+                <div class="contenedor">
+                    <img src="./assets/Categorias/madera/mapaMundi.jpg" alt="Mapa Mundi">
+                    <h3 class="categ">MADERA</h3>
+                </div>
+            </div>
+            <div class="ceramicaYvidrio">
+                <!-- Cerámica -->
+                <div class="contenedor">
+                    <img src="./assets/Categorias/ceramica/lamparasDeCeramica.jpg" alt="Lamparas de ceramica">
+                    <h3 class="categ">CERÁMICA</h3>
+                </div>
+                <!-- Vidrio -->
+                <div class="contenedor">
+                    <img src="./assets/Categorias/vidrio/CuadroFlores.jpg" alt="Cuadro Flores Vidrio">
+                    <h3 class="categ">VIDRIO</h3>
+                </div>
+            </div>
+            
         </div>
     </section>
 
     <!-- About us -->
     <section class="aboutUs">
-    
+
+        <a name="aboutUs">
+
         <h3 class="titulo">Sobre nosotros</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis numquam perferendis, cumque nesciunt laboriosam quisquam ipsam amet eligendi fugit ullam illum eius quasi consectetur harum unde ducimus totam nulla deserunt.</p>
 
@@ -100,14 +127,19 @@
 
     <!-- Suscripción -->
     <section class="suscripcion">
-        
-        <h4 class="titulo">Suscribite a nuestro newsletter para más información y novedades</h4>
+
+        <a name="suscribite">
+
+        <h3 class="titulo">Suscribite a nuestro newsletter para más información y novedades</h3>
         <label>Ingrese su dirección de email.
             <input type="text" name="mail" id="mail" placeholder="lorem_lorem@mail.com">
         </label>
     </section>
 
     <footer>
+
+        <a name="contactanos">
+
         <h3 class="titulo">Dirección</h3>
         <div class="iconoY">
             <i class="fas fa-map-marker-alt icono"></i>
